@@ -1,4 +1,4 @@
-# fcc-tribute-page
+# Freecodecamp Responsive Web Design Project - Tribute Page
 ## Tribute page of Mary Slessor
 ### User Story
 User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
