@@ -1,0 +1,310 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url(/images/mar-slessor_1848-1915.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: #000;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.main-heading {
+    position: relative;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 0.5px 1px #ccc;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.main-heading:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    left: -25px;
+    top: 22px;
+    background-color: #fff;
+}
+
+.author p,
+#biography p,
+#img-caption,
+.journey-mark .time {
+    color: #ccc;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 0;
+    color: #fff;
+    position: relative;
+}
+
+.author h1 {
+    text-shadow: 1px 0.5px 1px #ccc;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.author p {
+    margin-bottom: 10px;
+}
+
+#header-image {
+    position: relative;
+    margin-right: 30px;
+    top: 30px;
+    max-width: 120px;
+}
+
+#header-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px 5px;
+    box-shadow: 0.25rem 0.25rem 0 #aaa;
+}
+
+#tribute-info h1 {
+    font-weight: 500;
+}
+
+#biography-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 40px;
+}
+
+#biography {
+    line-height: 24px;
+}
+
+#biography p {
+    margin-top: 15px;
+}
+
+#img-div {
+    margin-left: 30px;
+    min-width: 300px;
+    height: auto;
+}
+
+#img-div img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 15px;
+}
+
+#journey-container {
+    padding: 0px 40px 70px;
+}
+
+#journey {
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.journey-item:first-child {
+    margin-top: 20px;
+}
+
+.journey-item span {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+}
+
+.journey-mark {
+    border: 1px dotted #ccc;
+    padding: 10px 20px;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0 20px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.journey-mark h2 {
+    color: rgb(242, 100, 49);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.journey-mark .time {
+    font-size: 14px;
+}
+
+.journey-mark:nth-of-type(2n),
+.journey-mark:nth-of-type(2n) {
+    text-align: right;
+    border-radius: 20px 20px 20px 0;
+}
+
+.journey-item img {
+    box-shadow: 0.2rem 0.2rem 0.3rem #fff;
+    border-radius: 50%;
+    max-width: 180px;
+    max-height: 100px;
+}
+
+.find-out-more {
+    color: #ccc;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    padding: 20px 150px;
+}
+
+.find-out-more p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.find-out-more a {
+    color: rgb(242, 100, 49);
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(242, 100, 49, 0.8);
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ccc;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+footer a {
+    color: rgb(242, 100, 49);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    #biography-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 10px;
+    }
+
+    #journey-container {
+        padding: 0px 10px 50px;
+    }
+
+    #img-div {
+        align-self: flex-start;
+        margin-left: 0px;
+        margin-top: 30px;
+        min-width: 250px;
+    }
+
+    #journey .journey-item {
+        padding: 10px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 35px 10px 25px;
+    }
+
+    #header-image {
+        margin: auto auto 30px;
+        top: 0px;
+    }
+
+    .find-out-more {
+        font-size: 15px;
+        padding: 20px 0 0;
+    }
+
+    #journey .journey-item {
+        padding: 20px 0;
+    }
+
+    .journey-mark {
+        padding: 10px;
+        min-width: 110px;
+    }
+
+    .journey-mark h2 {
+        font-size: 16px;
+    }
+    .journey-mark .time {
+        font-size: 13px;
+    }
+
+    .journey-item img {
+        max-height: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #main {
+        padding: 0 20px;
+    }
+
+    .main-heading {
+        font-size: 18px;
+    }
+
+    .author {
+        text-align: center;
+    }
+
+    .author h1 {
+        font-size: 24px;
+    }
+}
