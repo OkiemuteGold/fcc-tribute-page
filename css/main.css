@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 150px;
+    padding: 20px 120px;
 }
 
 .journey-item:first-child {
@@ -190,7 +190,7 @@ body {
     color: #ccc;
     font-family: "Lato", sans-serif;
     font-size: 15px;
-    padding: 20px 150px;
+    padding: 20px 120px;
 }
 
 .find-out-more p {
@@ -234,7 +234,7 @@ footer a {
     #biography-container {
         flex-direction: column;
         justify-content: center;
-        padding: 50px 10px;
+        padding: 40px 10px;
     }
 
     #journey-container {
@@ -248,12 +248,13 @@ footer a {
         min-width: 250px;
     }
 
-    #journey .journey-item {
+    #journey .journey-item,
+    .find-out-more {
         padding: 10px 50px 20px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #header {
         flex-direction: column;
         justify-content: center;
@@ -263,6 +264,10 @@ footer a {
     #header-image {
         margin: auto auto 30px;
         top: 0px;
+    }
+
+    .author {
+        text-align: center;
     }
 
     .find-out-more {
@@ -282,12 +287,15 @@ footer a {
     .journey-mark h2 {
         font-size: 16px;
     }
+
     .journey-mark .time {
         font-size: 13px;
     }
+}
 
+@media screen and (max-width: 500px) {
     .journey-item img {
-        max-height: 50px;
+        max-height: 80px;
     }
 }
 
@@ -300,11 +308,19 @@ footer a {
         font-size: 18px;
     }
 
-    .author {
-        text-align: center;
-    }
-
     .author h1 {
         font-size: 24px;
+    }
+
+    .journey-item img {
+        max-height: 50px;
+    }
+
+    .journey-mark {
+        padding: 5px 10px;
+    }
+
+    #header-image {
+        display: none;
     }
 }
