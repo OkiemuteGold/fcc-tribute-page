@@ -47,15 +47,6 @@ body {
     background-color: #fff;
 }
 
-.author p,
-#biography p,
-#img-caption,
-.journey-mark .time {
-    color: #ccc;
-    font-size: 15px;
-    font-family: "Lato", sans-serif;
-}
-
 #header {
     display: flex;
     align-items: center;
@@ -72,6 +63,16 @@ body {
 
 .author p {
     margin-bottom: 10px;
+}
+
+.author p,
+.author time,
+#biography p,
+#img-caption,
+.journey-mark .time {
+    color: #ccc;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
 }
 
 #header-image {
