@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCC - Tribute Page of Mary Slessor</title>
+    <title>Tribute Page of Mary Slessor - Okiemute Gold FCC Project</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Meta Description -->
+    <meta property="og:title" content="Tribute page of Mary Mitchell Slessor coded by Okiemute Gold" />
+    <!-- <meta property="og:url" content="index.html" /> -->
+    <meta property="og:type" content="tribute page" />
+    <meta property="og:description"
+        content="Tribute page of Mary Mitchell Slessor coded by Okiemute Gold for Freecodecamp Responsive Web Design Certification Course" />
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -123,10 +130,20 @@
         <footer>
             <p>
                 <!-- Made by <a href="https://github.com/OkiemuteGold" target="_blank" rel="noopener noreferrer">OkiemuteGold</a> -->
-                Made by <a href="https://github.com/OkiemuteGold" target="_blank">Okiemute Gold</a>
+                &copy; <span id="footer-year"></span> <a href="https://github.com/OkiemuteGold" target="_blank">Okiemute
+                    Gold</a>
             </p>
         </footer>
     </div>
+
+    <script>
+        let footerYear = document.getElementById("footer-year");
+        let fullCopyrightYear;
+        let date = new Date();
+        let currentYear = date.getFullYear();
+        currentYear > 2021 ? fullCopyrightYear = `2021 - ${currentYear}` : fullCopyrightYear = currentYear;
+        footerYear.innerHTML = fullCopyrightYear;
+    </script>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>

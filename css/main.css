@@ -140,11 +140,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 120px;
+    padding: 20px 100px;
 }
 
 .journey-item:first-child {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .journey-item span {
@@ -156,7 +156,7 @@ body {
 .journey-mark {
     border: 1px dotted #ccc;
     padding: 10px 20px;
-    min-width: 130px;
+    min-width: 140px;
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 0 20px;
@@ -191,11 +191,12 @@ body {
     color: #ccc;
     font-family: "Lato", sans-serif;
     font-size: 15px;
-    padding: 20px 120px;
+    padding: 0px 100px;
+    margin-top: 30px;
 }
 
 .find-out-more p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #ccc;
 }
 
@@ -203,6 +204,7 @@ body {
     color: rgb(242, 100, 49);
     margin-bottom: 5px;
     display: block;
+    width: fit-content;
     font-size: 14px;
     font-style: italic;
 }
@@ -217,13 +219,12 @@ a:hover {
 }
 
 footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #ccc;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    word-spacing: 3px;
 }
 
 footer a {
@@ -239,7 +240,7 @@ footer a {
     }
 
     #journey-container {
-        padding: 0px 10px 50px;
+        padding: 0px 10px 40px;
     }
 
     #img-div {
@@ -249,9 +250,12 @@ footer a {
         min-width: 250px;
     }
 
-    #journey .journey-item,
-    .find-out-more {
+    #journey .journey-item {
         padding: 10px 50px 20px;
+    }
+
+    .find-out-more {
+        padding: 0px 50px;
     }
 }
 
@@ -272,8 +276,7 @@ footer a {
     }
 
     .find-out-more {
-        font-size: 15px;
-        padding: 20px 0 0;
+        padding: 0px;
     }
 
     #journey .journey-item {
@@ -281,12 +284,12 @@ footer a {
     }
 
     .journey-mark {
-        padding: 10px;
+        padding: 10px 13px;
         min-width: 110px;
     }
 
     .journey-mark h2 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .journey-mark .time {
@@ -318,7 +321,11 @@ footer a {
     }
 
     .journey-mark {
-        padding: 5px 10px;
+        padding: 5px 13px;
+    }
+
+    .find-out-more {
+        font-size: 14px;
     }
 
     /* #header-image {
